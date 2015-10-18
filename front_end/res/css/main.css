@@ -1,20 +1,32 @@
 body {
 	background-color: #34495e;
 	color: #bdc3c7;
-}
-
-#content {
 	text-align: center;
 }
 
-.footer
-{
+#content {
+	padding-top: 10%;
+}
+
+.footer {
     clear: both;
     padding: 0;
-    text-align: center;
     line-height: normal;
     margin: 0;
     position: fixed;
     bottom: 0px;
-    width: 100%;
+}
+
+i {
+	color: #bdc3c7;
+}
+
+#banner{
+    background-color:white;
+    position:absolute;
+    left: 0;
+    right: 0;
+    padding:15px;
+    height:60px;
+    background-size:100%;      
 }
