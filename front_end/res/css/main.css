@@ -26,6 +26,10 @@ i {
 
 }
 
+.col-md-4 {
+    display: inline;
+}
+
 h2 {
     font-size: 15pt;
 }
@@ -52,7 +56,8 @@ ul {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header div div {
