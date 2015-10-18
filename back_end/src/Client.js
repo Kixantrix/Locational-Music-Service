@@ -16,12 +16,6 @@ function Client (id, playlistId, location)
 	this.location = location;
 }
 
-Client.prototype.persist = function() {
-	if (Database.get(this.id)) {
-		Database.update(this.id, this.playlistId, this.location);
-	} else {
-		Database.add(this.id, this.playlistId, this.location);
-	}
-}
-
 Client.prototype.constructor = Client;
+
+module.exports = Client;

@@ -59,3 +59,5 @@ GeoLocation.prototype.boundingCoordinates = function(distance) {
 
 	return {minLat:minLat maxLat:maxLat minLon:minLon maxLon:maxLon};
 }
+
+module.exports = GeoLocation;

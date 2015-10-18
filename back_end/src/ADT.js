@@ -1,3 +1,6 @@
+var GeoLocation = require('./GeoLocation');
+var Client = require('./Client');
+var Database = require('./Database');
 
 /**
 	TOP-LEVEL API
@@ -71,3 +74,5 @@ ClientsADT.prototype.getNear = function(id, latitude, longitude) {
    		return rObj;
 	});
 }
+
+module.exports = ClientsADT;

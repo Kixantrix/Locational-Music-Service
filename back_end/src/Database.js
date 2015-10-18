@@ -14,3 +14,5 @@ Database.prototype.addClient = function (id, playlistId, latitude, longitude) {
 }
 
 Database.prototype.constructor = Database;
+
+module.exports = Database;
