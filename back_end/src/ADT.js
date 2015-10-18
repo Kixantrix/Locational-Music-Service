@@ -22,7 +22,7 @@ ClientsADT.prototype.addNewClient = function(id, playlistId, latitude, longitude
 	Params: 
 		id - id of current user
 		latitude & longitude - current lat and lon of user
-		playlistId - id of previously playing playlist
+		pid - id of previously playing playlist
 	Returns a full client (id, lat, lon, playlistId)
 	Returns null if no new playlist is found
 */
@@ -30,8 +30,12 @@ ClientsADT.protoype.nextPlaylist = function(id, latitude, longitude, playlistId)
 	var nearbyClients = this.getNear(id, latitude, longitude);
 	if (!nearbyClients)
 		return null;
-	while (nearbyClients)
-
+	for (client in nearbyClients) {
+		if (client['pid'] != playlistId)
+			return client;
+	}
+	// None found
+	return null;
 }
 
 ClientsADT.prototype.updateLocation = function(id, latitude, longitude) {
@@ -47,18 +51,19 @@ ClientsADT.prototype.updatePlaylist = function(id, playlistId) {
 	Returns null if an error occurs.
 */
 ClientsADT.prototype.getNear = function(id, latitude, longitude) {
-	if (Database.empty)
-	    	return [];
+	// MAKE SURE THE DATABASE IS NOT EMPTY
+
+
 	var geoLocation = new GeoLocation(latitude, longitude);
 	// 1 kilometer to start
 	var radialDistance = 1;
 	var numResults = 0;
-	while (numResults < 1) {
+	while (numResults < 2) {
 		radialDistance++;
 		var boundingCoordinates = geoLocation.boundingCoordinates(1);
 		if (boundingCoordinates == null)
 			return null; 	//		:(
-		var queryResults = Database.query(SELECT * FROM Clients WHERE(Lat >= boundingCoordinates.minLat AND Lat <= boundingCoordinates.maxLat) AND (Lon >= boundingCoordinates.minLon AND Lon <= boundingCoordinates.minLon));
+		var queryResults = this.database.queryRange(boundingCoordinates.minLat, boundingCoordinates.maxLat, boundingCoordinates.minLon, boundingCoordinates.maxLon);
 		numResults = queryResults.length;
 	}
 

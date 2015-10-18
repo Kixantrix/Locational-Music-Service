@@ -16,6 +16,7 @@ function GeoLocation(latitude, longitude)
 {
 	this.radlat = this.fromDegrees(latitude);
 	this.radlon = this.fromDegrees(longitude);
+}
 
 //Translates degrees to radians.
 GeoLocation.prototype.fromDegrees = function(angle) {
