@@ -1,0 +1,25 @@
+{
+  "name": "location-music-service",
+  "version": "0.0.1",
+  "description": "Music service that is location based",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kixantrix/Locational-Music-Service.git"
+  },
+  "author": "Austin Meyers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kixantrix/Locational-Music-Service/issues"
+  },
+  "homepage": "https://github.com/Kixantrix/Locational-Music-Service#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}
