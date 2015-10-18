@@ -4,7 +4,7 @@ var Map = React.createClass({
 	render() {
 		return (
 			<div className="map">
-				Hello, world! I am a map
+				<p>Map</p>
 			</div>
 		);
 	}

@@ -1,13 +1,18 @@
 var React = require('react');
 
-var CommentBox = React.createClass({
-	render() {
+var MakeList = React.createClass({
+	render: function() {
 		return (
-			<div className="commentBox">
-				Hello, world! I am a CommentBox
+			<div className="makeList">
+				<div className="title">
+					<h2>People Near You</h2>
+				</div>
+				<div className="data">
+
+				</div>
 			</div>
 		);
 	}
 });
 
-module.exports = CommentBox;
+module.exports = MakeList;

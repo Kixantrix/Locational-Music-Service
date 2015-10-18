@@ -5,28 +5,50 @@ body {
 }
 
 #content {
-	padding-top: 10%;
-}
-
-.footer {
-    clear: both;
-    padding: 0;
-    line-height: normal;
-    margin: 0;
-    position: fixed;
-    bottom: 0px;
+	height: 100%;
 }
 
 i {
 	color: #bdc3c7;
 }
 
-#banner{
-    background-color:white;
-    position:absolute;
-    left: 0;
-    right: 0;
-    padding:15px;
-    height:60px;
-    background-size:100%;      
+.spotifyIn {
+    padding-bottom: 10px;
+}
+
+.fa-circle-arrow-left {
+	float: left;
+}
+
+.fa-circle-arrow-right {
+	float: right;
+
+}
+
+h2 {
+    font-size: medium;
+}
+
+.makeList {
+    background-color: #000;
+    height: 100%;
+}
+
+.title > h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+}
+
+.header div div {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
