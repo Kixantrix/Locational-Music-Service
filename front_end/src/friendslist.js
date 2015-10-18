@@ -4,7 +4,7 @@ var CommentBox = React.createClass({
 	render() {
 		return (
 			<div className="commentBox">
-				Hello, world! I am a CommentBox.
+				Hello, world! I am a CommentBox
 				{this.props.user}
 			</div>
 		);
