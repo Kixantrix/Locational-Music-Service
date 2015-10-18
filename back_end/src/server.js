@@ -120,6 +120,7 @@ dispatcher.onPost("/initClient", function (req, res) {
 	res.end(errorMsg);
 });
 
+/*
 // Destructs users client, deleting them from running server instance
 dispatcher.onPost("/destructClient", function (req, res) {
     	// Message to record errors
@@ -154,6 +155,7 @@ dispatcher.onPost("/destructClient", function (req, res) {
 	res.end(errorMsg);
 });
 
+*/
 dispatcher.onPost("/addFriend", function (req, res) {
 		// Message to record errors
 	var errorMsg = '';
