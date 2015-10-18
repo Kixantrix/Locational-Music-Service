@@ -22,15 +22,12 @@
     "bootstrap": "^3.3.5",
     "browserify": "^11.2.0",
     "http-server": "^0.8.5",
-<<<<<<< HEAD
     "httpdispatcher": "^0.4.0",
     "react": "^0.14.0",
-=======
     "jquery": "^2.1.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "reactify": "^1.1.1",
     "watchify": "^3.4.0"
->>>>>>> 0d69e859e5469b20d929190cf0b946fbad32d55e
   }
 }
