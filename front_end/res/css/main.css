@@ -4,6 +4,10 @@ body {
 	text-align: center;
 }
 
+#content {
+	padding-top: 10%;
+}
+
 .footer {
     clear: both;
     padding: 0;
@@ -11,11 +15,10 @@ body {
     margin: 0;
     position: fixed;
     bottom: 0px;
-    width: 100%;
 }
 
-.footer < i {
-	font-size: 20px;
+i {
+	color: #bdc3c7;
 }
 
 #banner{
