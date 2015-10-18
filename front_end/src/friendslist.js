@@ -1,4 +1,14 @@
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('body')
-);
+var React = require('react');
+
+var CommentBox = React.createClass({
+	render() {
+		return (
+			<div className="commentBox">
+				Hello, world! I am a CommentBox
+				{this.props.user}
+			</div>
+		);
+	}
+});
+
+module.exports = CommentBox;
