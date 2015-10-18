@@ -132,3 +132,12 @@ function changePlaylist(id) {
   		}
 	});
 }
+
+// Require by functions
+module.exports = {
+	'initClient': initClient,
+	'getNextSong': getNextSong,
+	'getNearbyUsers': getNearbyUsers,
+	'changePlaylist': changePlaylist
+	//'destruct': destruct
+}
