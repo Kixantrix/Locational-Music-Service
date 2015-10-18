@@ -1,5 +1,4 @@
 var request = require('request');
-var parse = require('JSON.parse');
 
 var client_id = '97c780212e3e47b9b9b7330b9cad1423'; // Your client id
 var client_secret = '6254bddc7c7f4fe29c44d81ed735afb4'; // Your client secret
