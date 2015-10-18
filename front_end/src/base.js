@@ -5,8 +5,8 @@ var Base= React.createClass({
 		return (
 			<div>
 				<div className="login">
-					<a href="/login">
-						<img className="spotifyIn" src="/res/assets/img/log_in-desktop-medium.png" alt="spotify login" height="40px" width="232px"></img>
+					<a href="https://accounts.spotify.com/authorize/?client_id=19343335c03d4a59906107c95a3af807&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Ffront_end%2F&scope=user-read-private%20user-read-email">
+						<img className="spotifyIn" src="/front_end/res/assets/img/log_in-desktop-medium.png" alt="spotify login" height="40px" width="232px"></img>
 					</a>
 				</div>
 				<div className="base">
