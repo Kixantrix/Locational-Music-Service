@@ -1,4 +1,5 @@
 var request = require('request');
+var parse = require('JSON.parse');
 
 var client_id = '97c780212e3e47b9b9b7330b9cad1423'; // Your client id
 var client_secret = '6254bddc7c7f4fe29c44d81ed735afb4'; // Your client secret
@@ -17,6 +18,7 @@ var authOptions = {
 
 var profileInfo;
 
+function getUserInfo() {
 request.post(authOptions, function(error, response, body) {
   if (!error && response.statusCode === 200) {
     // use the access token to access the Spotify Web API
@@ -29,12 +31,15 @@ request.post(authOptions, function(error, response, body) {
       json: true
     };
     request.get(options, function(error, response, body) {
-    	profileInfo = body
+    	profileInfo = JSON.parse(body);
     	console.log(body);
     });
     
   }
 });
+}
+
+var playlists;
 
 function getUserPlaylists(user_id) {
 	request.post(autOptions, function(error, response, body) {
@@ -50,12 +55,14 @@ function getUserPlaylists(user_id) {
       json: true
     };
     request.get(options, function(error, response, body) {
-      console.log(body);
-      return body
+    	playlists = JSON.parse(body);
+      	console.log(body);
     });
     
   }
 });
+}
+var playlistTracks;
 
 	function getPlayListTracks(user_id, playList_id) {
 	request.post(autOptions, function(error, response, body) {
@@ -71,8 +78,8 @@ function getUserPlaylists(user_id) {
       json: true
     };
     request.get(options, function(error, response, body) {
+    	playlistTracks = JSON.parse(body);
       console.log(body);
-      return body
     });
     
   }
