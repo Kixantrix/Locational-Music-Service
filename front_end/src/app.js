@@ -23,7 +23,7 @@ var DummyWrapper = React.createClass({
 });
 
 var App = React.createClass({
-    getInitialState: function() {
+    getInitialState: function () {
         return {
             activeItem: <Base />
         };
@@ -39,7 +39,7 @@ var App = React.createClass({
     setActiveItem: function (item) {
         this.setState({activeItem: item});
     },
-    render: function() {
+    render: function () {
         return(
             <div>
                 <Header />

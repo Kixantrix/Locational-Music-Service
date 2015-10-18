@@ -5,10 +5,14 @@ var MakeList = React.createClass({
 		return (
 			<div className="makeList">
 				<div className="title">
-					<h2>People Near You</h2>
+					<h2>People Near Me</h2>
 				</div>
 				<div className="data">
-
+					<ul>
+						<li>name, lat, lon, playlist, artist, song</li>
+						<li>name, lat, lon, playlist, artist, song</li>
+						<li>name, lat, lon, playlist, artist, song</li>
+					</ul>
 				</div>
 			</div>
 		);

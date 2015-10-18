@@ -26,6 +26,7 @@
     "jquery": "^2.1.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-googlemaps": "^0.4.0",
     "reactify": "^1.1.1",
     "watchify": "^3.4.0"
   }

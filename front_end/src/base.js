@@ -10,7 +10,7 @@ var Base= React.createClass({
 					</a>
 				</div>
 				<div className="base">
-					<iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="300" height="380" frameBorder="0" 
+					<iframe src="https://embed.spotify.com/?uri=spotify:user:arm38:playlist:6Un2aucyme3wtF7f2GrWxj" width="300" height="380" frameBorder="0" 
 					allowTransparency="true"></iframe>
 				</div>
 			</div>
