@@ -4,7 +4,8 @@
   "description": "This is a locational and social music service which utilizes spotify api to play songs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t reactify index.js -o bundle.js && http-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "bootstrap": "^3.3.5",
     "browserify": "^11.2.0",
     "http-server": "^0.8.5",
-    "react": "^0.14.0"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "reactify": "^1.1.1"
   }
 }
