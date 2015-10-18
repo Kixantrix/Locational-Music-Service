@@ -31,6 +31,7 @@ ClientsADT.protoype.nextPlaylist = function(id, latitude, longitude, playlistId)
 	if (!nearbyClients)
 		return null;
 	while (nearbyClients)
+
 }
 
 ClientsADT.prototype.updateLocation = function(id, latitude, longitude) {
@@ -74,5 +75,7 @@ ClientsADT.prototype.getNear = function(id, latitude, longitude) {
    		return rObj;
 	});
 }
+
+ClientsADT.prototype.constructor = ClientsADT;
 
 module.exports = ClientsADT;

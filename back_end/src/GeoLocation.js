@@ -60,4 +60,6 @@ GeoLocation.prototype.boundingCoordinates = function(distance) {
 	return {minLat:minLat maxLat:maxLat minLon:minLon maxLon:maxLon};
 }
 
+GeoLocation.prototype.constructor = GeoLocation;
+
 module.exports = GeoLocation;
